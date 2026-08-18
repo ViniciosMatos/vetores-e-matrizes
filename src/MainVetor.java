@@ -17,7 +17,7 @@ public class MainVetor {
         System.out.println(vetor.getTamanho());
 
         vetor.adicionarNoIndice(2,80);
-        vetor.obterTodos();
+        System.out.println(vetor);
         System.out.println(vetor.getTamanho());
     }
 }

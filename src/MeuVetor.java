@@ -26,6 +26,7 @@ public class MeuVetor {
         elementos = novoVetor;
     }
 
+//    sim fiz um obterTodos tambem
     public void obterTodos() {
         System.out.print("------------------\n[ ");
         for (int i = 0; i < tamanho; i++) {
@@ -111,7 +112,11 @@ public class MeuVetor {
     // por exemplo: "[10, 20, 30]". Use isso no lugar de um método "listar()" separado.
     @Override
     public String toString() {
-        // Seu código aqui
-        return "";
+        String variavel = "[ ";
+        for (int i = 0; i < tamanho; i++) {
+            variavel += String.valueOf(elementos[i]) + ", ";
+        }
+
+        return variavel + "]";
     }
 }
